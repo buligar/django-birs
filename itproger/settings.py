@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-lt_ivod*$huo!a!bychfoj7_(-ipu6v9d3wmi*k7l2m-5_t6-!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['buligar.pythonanywhere.com']
 
@@ -30,9 +30,9 @@ ALLOWED_HOSTS = ['buligar.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'main',
-    'sites',
-    'texture',
+    'main.apps.MainConfig',
+    'sites.apps.SitesConfig',
+    'texture.apps.TextureConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -28,6 +28,9 @@ div .alert-warning img {
     width: 70%;
 }
 
+img.img-article-left.thumb {
+	width: 20%;
+}
 
 aside .logo {
     font-size: 40px;
@@ -138,3 +141,4 @@ div {
     margin-left:10%;
     width: 1000px;
 }
+

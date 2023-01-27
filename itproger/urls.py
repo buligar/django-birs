@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from main.views import pageNotFound
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,6 +26,8 @@ urlpatterns = [
     path('sites/',include('sites.urls')),
     path('texture/',include('texture.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+handler404 = pageNotFound
 
 # включаем возможность обработки картинок
 if settings.DEBUG:
